@@ -27,14 +27,14 @@ mod app {
 
     // IMPORTANT: The USB-Serial with RTIC github project example that I'm following.
     //            I tried to use the Pico board examples of USB-Serial (without interrupts
-    //            and with interrupts with success, but when using with RTIC I could make
-    //            it working when merged with the RTIC example.) So I asked some questions
+    //            and with interrupts with success, but when using with RTIC I could not make
+    //            it work when merged with the RTIC example.) So I asked some questions
     //            in the in Matrix chat and received links to examples of there github
     //            project where it was working, then a used and adapted some parts there
     //            in this project template.
-    //            This were the find folks that helped me in the Matrix chat, the 3 projects
+    //            This were the kind folks that helped me in the Matrix chat, the 3 projects
     //            that they suggest me to study are good examples of programs made with RTIC
-    //            and USB.
+    //            and USB and should be studied.
     //
     // Paul Daniel Faria
     // https://github.com/Nashenas88/dactyl-manuform-kb2040-rs/blob/main/src/main.rs#L80
