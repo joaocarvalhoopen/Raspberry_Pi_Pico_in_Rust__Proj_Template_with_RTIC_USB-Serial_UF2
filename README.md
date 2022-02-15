@@ -151,10 +151,10 @@ runner = "elf2uf2-rs -d"
   See rp-hal page for more details. <br>
   Connect your USB JTAG/debug probe (such as a Raspberry Pi Pico running this firmware) to the SWD programming pins on your RP2040 board.
 
-* Dapper Mime <br>
+* **Dapper Mime** <br>
   [https://github.com/majbthrd/DapperMime](https://github.com/majbthrd/DapperMime)
 
-* Connection diagram in here <br>
+* **Connection diagram in here** <br>
   [https://user-images.githubusercontent.com/12226419/134785445-5f651d5a-eda9-4e94-8860-d2ef619dc27a.png](https://user-images.githubusercontent.com/12226419/134785445-5f651d5a-eda9-4e94-8860-d2ef619dc27a.png)
 
 **Note_3:** For this project template you don't need the Rust nightly version but if you need you can change between stable and nightly versions by doing the following. <br>
@@ -172,62 +172,62 @@ $ rustup default stable
 
 ## Good Pico in Rust References
 
-0. Book - Get Started with MicroPython on Raspberry Pi Pico <br>
+0. **Book - Get Started with MicroPython on Raspberry Pi Pico** <br>
    [https://hackspace.raspberrypi.com/books/micropython-pico](https://hackspace.raspberrypi.com/books/micropython-pico)
 
-1. Video - An Overview of the Embedded Rust Ecosystem <br>
+1. **Video - An Overview of the Embedded Rust Ecosystem** <br>
    [https://www.youtube.com/watch?v=vLYit_HHPaY](https://www.youtube.com/watch?v=vLYit_HHPaY)
 
-2. **rp-hal** - Rust support for the "Raspberry Silicon" family of microcontrollers <br>
+2. **rp-hal** - **Rust support for the "Raspberry Silicon" family of micro-controllers** <br>
    Your primary source of information for Rust developments with Raspberry Pico. <br>
    [https://github.com/rp-rs/rp-hal](https://github.com/rp-rs/rp-hal)
 
-3. Crate rp2040_hal - Docs <br>
+3. **Crate rp2040_hal - Docs** <br>
    Your primary source of doc information on the HAL - Hardware Abstraction Layer. <br> 
    [https://docs.rs/rp2040-hal/latest/rp2040_hal/](https://docs.rs/rp2040-hal/latest/rp2040_hal/)
 
-4. Raspberry Pi Pico Board - Rust Code Examples <br>
+4. **Raspberry Pi Pico Board - Rust Code Examples** <br>
    Study them all! <br>
    [https://github.com/rp-rs/rp-hal/tree/main/boards/rp-pico/examples](https://github.com/rp-rs/rp-hal/tree/main/boards/rp-pico/examples)
 
-5. Examples for the HAL - Hardware Abstraction Layer <br>
+5. **Examples for the HAL - Hardware Abstraction Layer** <br>
    rp-hal - rp2040-hal - examples <br>
    [https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal/examples](https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal/examples)
 
-6. Github rp2040-hal <br>
+6. **Github rp2040-hal** <br>
    [https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal](https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal)
 
-7. Getting Started with Rust on a Raspberry Pi Pico (Part 1) <br>
+7. **Getting Started with Rust on a Raspberry Pi Pico (Part 1)** <br>
    [https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry](https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry)
 
-8. Getting Started with Rust on a Raspberry Pi Pico (Part 2) <br>
+8. **Getting Started with Rust on a Raspberry Pi Pico (Part 2)** <br>
    [https://reltech.substack.com/p/getting-started-with-raspberry-pi](https://reltech.substack.com/p/getting-started-with-raspberry-pi)
 
-9. Getting Started with Rust on a Raspberry Pi Pico (Part 3) <br>
+9. **Getting Started with Rust on a Raspberry Pi Pico (Part 3)** <br>
    [https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry-a88](https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry-a88)
 
-10. Multilingual blink for Raspberry Pi Pico - Alasdair Allan <br>
+10. **Multilingual blink for Raspberry Pi Pico - Alasdair Allan** <br>
     [https://www.raspberrypi.com/news/multilingual-blink-for-raspberry-pi-pico/](https://www.raspberrypi.com/news/multilingual-blink-for-raspberry-pi-pico/)
 
-11. Video - How can we write the best device driver for a Hal in Rust? <br>
+11. **Video - How can we write the best device driver for a Hal in Rust?** <br>
     [https://www.youtube.com/watch?v=z9z74VpqO9A](https://www.youtube.com/watch?v=z9z74VpqO9A)
 
-12. 258 drivers para Embedded-HAL <br>
+12. **258 drivers para Embedded-HAL** <br>
     [https://crates.io/search?q=embedded-hal%20driver](https://crates.io/search?q=embedded-hal%20driver)
 
-13. Video - RTIC - Real Time Interrupt driven Concurrency <br>
+13. **Video - RTIC - Real Time Interrupt driven Concurrency** <br>
     RTIC is a RTOS - Real Time Operating System. <br>
     [https://www.youtube.com/watch?v=saNdh0m_qHc](https://www.youtube.com/watch?v=saNdh0m_qHc)
 
-14. RTIC Book <br>
+14. **RTIC Book** <br>
     Real-Time Interrupt-driven Concurrency. <br>
     A very efficient preemptive multitasking framework that supports task prioritization and dead lock free execution. <br>
     [https://rtic.rs/1/book/en/](https://rtic.rs/1/book/en/)
 
-15. Github - rtic-rs - cortex-m-rtic <br>
+15. **Github - rtic-rs - cortex-m-rtic** <br>
     [https://github.com/rtic-rs/cortex-m-rtic](https://github.com/rtic-rs/cortex-m-rtic)
 
-16. Video - Grepit about the Rust RTIC framework <br>
+16. **Video - Grepit about the Rust RTIC framework** <br>
     [https://www.youtube.com/watch?v=sSJ-Md8nwIM](https://www.youtube.com/watch?v=sSJ-Md8nwIM)
 
 17. Good **example 1** of **advanced Pico with RTIC** to Study <br>
@@ -246,87 +246,89 @@ $ rustup default stable
     mgottschlag - rp2040-usb-sound-card <br>
     [https://github.com/mgottschlag/rp2040-usb-sound-card](https://github.com/mgottschlag/rp2040-usb-sound-card)
 
-20. Project template for rp2040-hal <br>
+20. **Project template for rp2040-hal** <br>
     The starting point for the project that you are current reading. <br>
     [https://github.com/rp-rs/rp2040-project-template](https://github.com/rp-rs/rp2040-project-template)
 
-21. pio-rs - Support for the Raspberry Silicon RP2040's PIO State Machines. <br>
+21. **pio-rs - Support for the Raspberry Silicon RP2040's PIO State Machines** <br>
     [https://github.com/rp-rs/pio-rs ](https://github.com/rp-rs/pio-rs )
 
-22. embedded-hal - Use this if you are writing code that should run on any microcontroller <br>
+22. **embedded-hal** <br>
+    Use this if you are writing code that should run on any micro-controller <br>
     [https://github.com/rust-embedded/embedded-hal](https://github.com/rust-embedded/embedded-hal)
 
-13. raspberrypi  picotool - Not really neaded in Rust <br>
+23. **raspberrypi  picotool - Not really neaded in Rust** <br>
     [https://github.com/raspberrypi/picotool](https://github.com/raspberrypi/picotool)
 
-24. usb-device - Experimental device-side USB stack for embedded devices. <br>
+24. **usb-device - Experimental device-side USB stack for embedded devices** <br>
     [https://crates.io/crates/usb-device](https://crates.io/crates/usb-device)
 
-25. probe-rs - A modern, embedded debugging toolkit, written in Rust <br>
+25. **probe-rs - A modern, embedded debugging toolkit, written in Rust** <br>
     [https://probe.rs/](https://probe.rs/)
 
-26. GitHub probe-rs <br>
+26. **GitHub probe-rs** <br>
     [https://github.com/probe-rs/probe-rs](https://github.com/probe-rs/probe-rs)
 
-27. Video - probe-rs: Your Embedded Tome <br>
+27. **Video - probe-rs: Your Embedded Tome** <br>
     [https://www.youtube.com/watch?v=esNPoXbhHkU](https://www.youtube.com/watch?v=esNPoXbhHkU)
 
-28. rust-embedded - cortex-m-quickstart <br>
+28. **rust-embedded - cortex-m-quickstart** <br>
     [https://github.com/rust-embedded/cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart)
 
-29. STM32 - Discovery - Book <br>
+29. **STM32 - Discovery - Book** <br>
     [https://docs.rust-embedded.org/discovery/](https://docs.rust-embedded.org/discovery/)
 
-30. The Embedded Rust Book <br>
+30. **The Embedded Rust Book** <br>
     [https://docs.rust-embedded.org/book/](https://docs.rust-embedded.org/book/)
 
-31. The Embedonomicon Book <br>
+31. **The Embedonomicon Book** <br>
     Deep dive into the inner workings. <br>
     [https://docs.rust-embedded.org/embedonomicon/](https://docs.rust-embedded.org/embedonomicon/)
 
-32. More gdb commands cheat-sheet <br>
+32. **More gdb commands cheat-sheet** <br>
     [https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)
 
-33. Video - Getting Started with Debugging using GDB - Find Bugs in Your Code with A Couple Easy Commands <br>
+33. **Video - Getting Started with Debugging using GDB** <br>
+    Find Bugs in Your Code with A Couple Easy Commands <br>
     [https://www.youtube.com/watch?v=Dq8l1_-QgAc](https://www.youtube.com/watch?v=Dq8l1_-QgAc)
 
-34. Play List - Embedded Rust BluePill - Vers Binarii <br>
+34. **Play List - Embedded Rust BluePill - Vers Binarii** <br>
     [https://www.youtube.com/playlist?list=PLP_X41VhYn5X6Wwjnm0bRwI3n2pdaszxU](https://www.youtube.com/playlist?list=PLP_X41VhYn5X6Wwjnm0bRwI3n2pdaszxU)
 
-35. Play List - Embedded Rust course - JaJakub - 2022 <br>
+35. **Play List - Embedded Rust course - JaJakub** - 2022 <br>
     [https://www.youtube.com/playlist?list=PLL2SCPK5xSRWBPj-nKOVYIhxRw7C4kYeI](https://www.youtube.com/playlist?list=PLL2SCPK5xSRWBPj-nKOVYIhxRw7C4kYeI)
 
-36. joaocarvalhoopen - stm32_bluepill_in_rust__Template <br>
+36. **joaocarvalhoopen - stm32_bluepill_in_rust__Template** <br>
     [https://github.com/joaocarvalhoopen/stm32_bluepill_in_rust__Template](https://github.com/joaocarvalhoopen/stm32_bluepill_in_rust__Template)
 
-37. Awesome Embedded Rust <br>
+37. **Awesome Embedded Rust** <br>
     [https://github.com/rust-embedded/awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
 
-38. How to learn modern Rust <br>
+38. **How to learn modern Rust** <br>
     [https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
 
 
 ## Datasheets and other specific info for the RP2040 micro-controller
 
-1. Raspberry Pi Pico Site <br>
+1. **Raspberry Pi Pico Site** <br>
    [https://www.raspberrypi.com/products/raspberry-pi-pico/](https://www.raspberrypi.com/products/raspberry-pi-pico/)
 
-2. Pico RP2040 documentation <br>
+2. **Pico RP2040 documentation** <br>
    [https://www.raspberrypi.com/documentation/microcontrollers/](https://www.raspberrypi.com/documentation/microcontrollers/)
 
-3. RP2040 Micro-controller - Datasheet - PDF <br>
+3. **RP2040 Micro-controller - Datasheet - PDF** <br>
    [https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 
-4. Pico board Datasheet - PDF <br>
+4. **Pico board Datasheet - PDF** <br>
    [https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 
-5. Pico C/C++ SDK - Libraries and Tools - PDF <br>
+5. **Pico C/C++ SDK - Libraries and Tools - PDF** <br>
    [https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
 
-6. Pico Python SDK - PDF <br>
+6. **Pico Python SDK - PDF** <br>
    [https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf)
 
-7. Pico FAQ - PDF <br>
+7. **Pico FAQ - PDF** <br>
    [https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-faq.pdf](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-faq.pdf)
 
 8. Raspberry Pi **Pico Overclocking**, beware there is a catch! - Part 1 <br>
@@ -336,36 +338,36 @@ $ rustup default stable
 9. **Pico Overclock Part 2**. Fixing the catch with the flash. - Part 2 <br>
    [https://www.youtube.com/watch?v=rU381A-b79c](https://www.youtube.com/watch?v=rU381A-b79c)
 
-10. Play List - Raspberry Pi Pico - Low Level Learning <br> 
+10. **Play List - Raspberry Pi Pico - Low Level Learning** <br> 
     [https://www.youtube.com/playlist?list=PLc7W4b0WHTAV6EYRVayb9c9dEsq-NeXAt](https://www.youtube.com/playlist?list=PLc7W4b0WHTAV6EYRVayb9c9dEsq-NeXAt)
 
-11. Play List - Intro to Raspberry Pi Pico and RP2040 - DigiKey <br>
+11. **Play List - Intro to Raspberry Pi Pico and RP2040 - DigiKey** <br>
     [https://www.youtube.com/playlist?list=PLEBQazB0HUyQO6rJxKr2umPCgmfAU-cqR](https://www.youtube.com/playlist?list=PLEBQazB0HUyQO6rJxKr2umPCgmfAU-cqR)
 
-12. Video - In-depth: Raspberry Pi Pico's PIO - programmable I/O! <br>
+12. **Video - In-depth: Raspberry Pi Pico's PIO - programmable I/O** <br>
     [https://www.youtube.com/watch?v=yYnQYF_Xa8g](https://www.youtube.com/watch?v=yYnQYF_Xa8g)
 
-13. Raspberry Pi Pico 200Khz Digital Oscilloscope <br>
+13. **Raspberry Pi Pico 200Khz Digital Oscilloscope** <br>
     [https://www.instructables.com/Raspberry-Pi-Pico-200Khz-Digital-Oscilloscope/](https://www.instructables.com/Raspberry-Pi-Pico-200Khz-Digital-Oscilloscope/)
 
-14. ADC do Pico <br>
+14. **The Pico ADC** <br>
     Integral Non-Linearity (INL) and Differential Non-Linearity (DNL) are used to measure the error of the quantization of the incoming signal that the ADC generates <br>
     Pag. 589 e Pag. 590 do Pico Datasheet <br>
     [https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 
-15. Characterizing the Raspberry Pi Pico ADC - markomo <br>
+15. **Characterizing the Raspberry Pi Pico ADC - markomo** <br>
     [https://pico-adc.markomo.me/](https://pico-adc.markomo.me/)
 
-16. Pico ADC - Power Supply Noise and Spectrum Testing <br>
+16. **Pico ADC - Power Supply Noise and Spectrum Testing** <br>
     [https://pico-adc.markomo.me/PSU-Noise/](https://pico-adc.markomo.me/PSU-Noise/)
 
-17. Using a HD44780 LCD display with MicroPython on the Raspberry Pi Pico <br>
+17. **Using a HD44780 LCD display with MicroPython on the Raspberry Pi Pico** <br>
     [https://raphaelkabo.com/blog/pi-pico-hd44780/](https://raphaelkabo.com/blog/pi-pico-hd44780/)
 
-18. How to connect a piezo speaker to a microcontroller? <br>
+18. **How to connect a piezo speaker to a microcontroller?** <br>
     [https://www.eevblog.com/forum/projects/how-to-connect-a-piezo-speaker-to-a-microcontroller/](https://www.eevblog.com/forum/projects/how-to-connect-a-piezo-speaker-to-a-microcontroller/)
 
-19. Electrical Symbols & Electronic Symbols <br>
+19. **Electrical Symbols & Electronic Symbols** <br>
     [https://www.rapidtables.com/electric/electrical_symbols.html](https://www.rapidtables.com/electric/electrical_symbols.html)
 
 
@@ -375,7 +377,6 @@ Solder a push button between the GND and Run pin's and then glue it over RP-Pico
 <br>
 
 ![Pico Reset Button soldered and glued over the RP-Pico Board](./img/Raspberry_Pico_Reset_Button_small.png) <br>
-
 
 ```
 The Reset process to enter UF2 programming mode, instead of doing:
@@ -400,14 +401,14 @@ You will do:
 
 Use the following documentation while studying the examples:
 
-* Crate rp2040_hal - Docs <br>
+* **Crate rp2040_hal - Docs** <br>
   Your primary source of doc information on the HAL - Hardware Abstraction Layer. <br> 
   [https://docs.rs/rp2040-hal/latest/rp2040_hal/](https://docs.rs/rp2040-hal/latest/rp2040_hal/)
 
-* RP2040 Micro-controller - Datasheet - PDF <br>
+* **RP2040 Micro-controller - Datasheet - PDF** <br>
   [https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 
-* RTIC Book <br>
+* **RTIC Book** <br>
   Real-Time Interrupt-driven Concurrency. <br>
   A very efficient preemptive multitasking framework that supports task prioritization and dead lock free execution. <br>
   [https://rtic.rs/1/book/en/](https://rtic.rs/1.0/book/en/)
@@ -415,7 +416,7 @@ Use the following documentation while studying the examples:
 
 **The examples:** <br>
 
-* Examples for the Pico Board. <br>
+* **Examples for the RP-Pico Board** <br>
   rp-hal - boards - rp-pico - examples <br>
   [https://github.com/rp-rs/rp-hal/tree/main/boards/rp-pico/examples](https://github.com/rp-rs/rp-hal/tree/main/boards/rp-pico/examples)
 
@@ -436,8 +437,8 @@ Use the following documentation while studying the examples:
 14. - pico_ws2812_led.rs
 ```
 
-* Examples for the HAL - Hardware Abstraction Layer <br>
-  rp-hal - rp2040-hal - examples <br>
+* **Examples for the HAL - Hardware Abstraction Layer** <br>
+  rp-hal - **rp2040-hal** - examples <br>
   [https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal/examples](https://github.com/rp-rs/rp-hal/tree/main/rp2040-hal/examples)
 
 ```
