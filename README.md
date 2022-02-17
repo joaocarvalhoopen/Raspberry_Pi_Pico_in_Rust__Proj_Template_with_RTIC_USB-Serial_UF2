@@ -492,9 +492,9 @@ Then the following RTIC examples with USB. <br>
 
 First if possible try to use RTIC framework for concurrency. It’s like a small and lightweight operating system that simplifies the development process. <br>
 Then you should use BSP (Board level support package) features where available. <br>
-Then use rp2040-hal (Hardware Abstraction Layer) features for the majority of developments and if you need something that is not yet supported by the HAL or if you need a more fine grained control over the hardware, you should use rp2040-pac (Peripheral Access Crate) registers direct access and consult the rp2040 datasheet to discover what each register do and how to use them. <br> 
+Then use rp2040-hal (Hardware Abstraction Layer) features for the majority of development and if you need something that is not yet supported by the HAL or if you need a more fine grained control over the hardware, you should use rp2040-pac (Peripheral Access Crate) direct access through the registers and consult the rp2040 datasheet to discover each register name, what each register do and how to use them. <br> 
 
-* Crate rp2040_pac <br>
+* **Crate rp2040_pac** <br>
   [https://docs.rs/rp2040-pac/0.3.0/rp2040_pac/](https://docs.rs/rp2040-pac/0.3.0/rp2040_pac/)
 
 * **To know how the syntax to access and use the registers see...** <br>
