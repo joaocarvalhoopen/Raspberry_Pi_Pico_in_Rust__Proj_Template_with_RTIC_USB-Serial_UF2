@@ -50,7 +50,6 @@ mod app {
     //
     // Global Static variable, has to be written inside unsafe blocks.
     // A reference can be obtained with as_ref() method.
-    static mut USB_BUS: Option<usb_device::bus::UsbBusAllocator<hal::usb::UsbBus>> = None;
 
     pub struct Counter {
         counter: u32,
@@ -98,7 +97,7 @@ mod app {
     #[local]
     struct Local {}
 
-    #[init]
+    #[init(local = [usb_bus: Option<usb_device::bus::UsbBusAllocator<hal::usb::UsbBus>> = None])]
     fn init(c: init::Context) -> (Shared, Local, init::Monotonics) {
         //*******
         // Initialization of the system clock.
@@ -126,33 +125,27 @@ mod app {
         //
         // Set up the USB driver
         // The bus that is used to manage the device and class below.
-        let usb_bus = UsbBusAllocator::new(hal::usb::UsbBus::new(
-            c.device.USBCTRL_REGS,
-            c.device.USBCTRL_DPRAM,
-            clocks.usb_clock,
-            true,
-            &mut resets,
-        ));
-
-        // We store the bus in a static to make the borrows satisfy the rtic model, since rtic
-        // needs all references to be 'static.
-        unsafe {
-            USB_BUS = Some(usb_bus);
-        }
+        let usb_bus: &'static _ =
+            c.local
+                .usb_bus
+                .insert(UsbBusAllocator::new(hal::usb::UsbBus::new(
+                    c.device.USBCTRL_REGS,
+                    c.device.USBCTRL_DPRAM,
+                    clocks.usb_clock,
+                    true,
+                    &mut resets,
+                )));
 
         // Set up the USB Communications Class Device driver.
-        let serial = SerialPort::new(unsafe { USB_BUS.as_ref().unwrap() });
+        let serial = SerialPort::new(usb_bus);
 
         // Create a USB device with a fake VID and PID
-        let usb_dev = UsbDeviceBuilder::new(
-            unsafe { USB_BUS.as_ref().unwrap() },
-            UsbVidPid(0x16c0, 0x27dd),
-        )
-        .manufacturer("Fake company")
-        .product("Serial port")
-        .serial_number("TEST")
-        .device_class(2) // from: https://www.usb.org/defined-class-codes
-        .build();
+        let usb_dev = UsbDeviceBuilder::new(usb_bus, UsbVidPid(0x16c0, 0x27dd))
+            .manufacturer("Fake company")
+            .product("Serial port")
+            .serial_number("TEST")
+            .device_class(2) // from: https://www.usb.org/defined-class-codes
+            .build();
 
         //*******
         // Initialization of the LED GPIO and the timer.
