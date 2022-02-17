@@ -246,65 +246,70 @@ $ rustup default stable
     mgottschlag - rp2040-usb-sound-card <br>
     [https://github.com/mgottschlag/rp2040-usb-sound-card](https://github.com/mgottschlag/rp2040-usb-sound-card)
 
-20. **Project template for rp2040-hal** <br>
+20. Good **example 4** of **advanced Pico with RTIC** to Study <br>
+    kalkyl - Playground for RTIC on RP2040 <br>
+    3 good examples <br>
+    [https://github.com/kalkyl/rp-rtic](https://github.com/kalkyl/rp-rtic)
+
+21. **Project template for rp2040-hal** <br>
     The starting point for the project that you are current reading. <br>
     [https://github.com/rp-rs/rp2040-project-template](https://github.com/rp-rs/rp2040-project-template)
 
-21. **pio-rs - Support for the Raspberry Silicon RP2040's PIO State Machines** <br>
+22. **pio-rs - Support for the Raspberry Silicon RP2040's PIO State Machines** <br>
     [https://github.com/rp-rs/pio-rs ](https://github.com/rp-rs/pio-rs )
 
-22. **embedded-hal** <br>
+23. **embedded-hal** <br>
     Use this if you are writing code that should run on any micro-controller <br>
     [https://github.com/rust-embedded/embedded-hal](https://github.com/rust-embedded/embedded-hal)
 
-23. **raspberrypi  picotool - Not really neaded in Rust** <br>
+24. **raspberrypi  picotool - Not really neaded in Rust** <br>
     [https://github.com/raspberrypi/picotool](https://github.com/raspberrypi/picotool)
 
-24. **usb-device - Experimental device-side USB stack for embedded devices** <br>
+25. **usb-device - Experimental device-side USB stack for embedded devices** <br>
     [https://crates.io/crates/usb-device](https://crates.io/crates/usb-device)
 
-25. **probe-rs - A modern, embedded debugging toolkit, written in Rust** <br>
+26. **probe-rs - A modern, embedded debugging toolkit, written in Rust** <br>
     [https://probe.rs/](https://probe.rs/)
 
-26. **GitHub probe-rs** <br>
+27. **GitHub probe-rs** <br>
     [https://github.com/probe-rs/probe-rs](https://github.com/probe-rs/probe-rs)
 
-27. **Video - probe-rs: Your Embedded Tome** <br>
+28. **Video - probe-rs: Your Embedded Tome** <br>
     [https://www.youtube.com/watch?v=esNPoXbhHkU](https://www.youtube.com/watch?v=esNPoXbhHkU)
 
-28. **rust-embedded - cortex-m-quickstart** <br>
+29. **rust-embedded - cortex-m-quickstart** <br>
     [https://github.com/rust-embedded/cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart)
 
-29. **STM32 - Discovery - Book** <br>
+30. **STM32 - Discovery - Book** <br>
     [https://docs.rust-embedded.org/discovery/](https://docs.rust-embedded.org/discovery/)
 
-30. **The Embedded Rust Book** <br>
+31. **The Embedded Rust Book** <br>
     [https://docs.rust-embedded.org/book/](https://docs.rust-embedded.org/book/)
 
-31. **The Embedonomicon Book** <br>
+32. **The Embedonomicon Book** <br>
     Deep dive into the inner workings. <br>
     [https://docs.rust-embedded.org/embedonomicon/](https://docs.rust-embedded.org/embedonomicon/)
 
-32. **More gdb commands cheat-sheet** <br>
+33. **More gdb commands cheat-sheet** <br>
     [https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)
 
-33. **Video - Getting Started with Debugging using GDB** <br>
+34. **Video - Getting Started with Debugging using GDB** <br>
     Find Bugs in Your Code with A Couple Easy Commands <br>
     [https://www.youtube.com/watch?v=Dq8l1_-QgAc](https://www.youtube.com/watch?v=Dq8l1_-QgAc)
 
-34. **Play List - Embedded Rust BluePill - Vers Binarii** <br>
+35. **Play List - Embedded Rust BluePill - Vers Binarii** <br>
     [https://www.youtube.com/playlist?list=PLP_X41VhYn5X6Wwjnm0bRwI3n2pdaszxU](https://www.youtube.com/playlist?list=PLP_X41VhYn5X6Wwjnm0bRwI3n2pdaszxU)
 
-35. **Play List - Embedded Rust course - JaJakub** - 2022 <br>
+36. **Play List - Embedded Rust course - JaJakub** - 2022 <br>
     [https://www.youtube.com/playlist?list=PLL2SCPK5xSRWBPj-nKOVYIhxRw7C4kYeI](https://www.youtube.com/playlist?list=PLL2SCPK5xSRWBPj-nKOVYIhxRw7C4kYeI)
 
-36. **joaocarvalhoopen - stm32_bluepill_in_rust__Template** <br>
+37. **joaocarvalhoopen - stm32_bluepill_in_rust__Template** <br>
     [https://github.com/joaocarvalhoopen/stm32_bluepill_in_rust__Template](https://github.com/joaocarvalhoopen/stm32_bluepill_in_rust__Template)
 
-37. **Awesome Embedded Rust** <br>
+38. **Awesome Embedded Rust** <br>
     [https://github.com/rust-embedded/awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust)
 
-38. **How to learn modern Rust** <br>
+39. **How to learn modern Rust** <br>
     [https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
 
 
@@ -486,6 +491,11 @@ Then the following RTIC examples with USB. <br>
   Mathias <br>
   mgottschlag - rp2040-usb-sound-card <br>
   [https://github.com/mgottschlag/rp2040-usb-sound-card](https://github.com/mgottschlag/rp2040-usb-sound-card)
+
+* Good **example 4** of **advanced Pico with RTIC** to Study <br>
+  kalkyl - Playground for RTIC on RP2040 <br>
+  3 good examples <br>
+  [https://github.com/kalkyl/rp-rtic](https://github.com/kalkyl/rp-rtic)
 
 
 ## How to program the Pico in Rust?
