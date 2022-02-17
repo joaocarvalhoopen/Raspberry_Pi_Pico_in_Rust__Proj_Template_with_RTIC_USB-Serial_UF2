@@ -429,8 +429,12 @@ mod app {
                 //                override is applied.
                 // See pag 272 of the Pico Datasheet:
                 // https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#_gpio_functions
+
                 let led_status_reg =
                     unsafe { (*pac::IO_BANK0::ptr()).gpio[25].gpio_status.read().bits() };
+
+                // Reserved bit.
+                // let sio_pin_value = unsafe { (*pac::SIO::ptr()).gpio_out.read().bits() };
 
                 let (led_bool, led_status) = if ((led_status_reg & 1 << 8) >> 8) == 1_u32 {
                     (true, "ON")

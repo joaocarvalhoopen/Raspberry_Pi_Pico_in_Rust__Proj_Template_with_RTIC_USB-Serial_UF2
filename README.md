@@ -488,6 +488,37 @@ Then the following RTIC examples with USB. <br>
   [https://github.com/mgottschlag/rp2040-usb-sound-card](https://github.com/mgottschlag/rp2040-usb-sound-card)
 
 
+## How to program the Pico in Rust?
+
+First if possible try to use RTIC framework for concurrency. It’s like a small and lightweight operating system that simplifies the development process. <br>
+Then you should use BSP (Board level support package) features where available. <br>
+Then use rp2040-hal (Hardware Abstraction Layer) features for the majority of developments and if you need something that is not yet supported by the HAL or if you need a more fine grained control over the hardware, you should use rp2040-pac (Peripheral Access Crate) registers direct access and consult the rp2040 datasheet to discover what each register do and how to use them. <br> 
+
+* Crate rp2040_pac <br>
+  [https://docs.rs/rp2040-pac/0.3.0/rp2040_pac/](https://docs.rs/rp2040-pac/0.3.0/rp2040_pac/)
+
+* **To know how the syntax to access and use the registers see...** <br>
+  svd2rust <br>
+  [https://docs.rs/svd2rust/0.21.0/svd2rust/#peripheral-api](https://docs.rs/svd2rust/0.21.0/svd2rust/#peripheral-api)
+
+* **RP2040 Micro-controller - Datasheet - PDF** <br>
+  [https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
+
+``` Rust
+// Example
+use rp_pico::hal;
+use rp_pico::pac;
+let led_status_reg = unsafe { (*pac::IO_BANK0::ptr()).gpio[25].gpio_status.read().bits() };
+let sio_pin_value  = unsafe { (*pac::SIO::ptr()).gpio_out.read().bits() };
+
+let (led_bool, led_str) = if ((led_status_reg & 1 << 8) >> 8) == 1_u32 {
+        (true, "ON")
+    } else {
+        (false, "OFF")
+    };
+```
+
+
 ## License
 The contents of this repository are dual-licensed under the _MIT OR Apache
 2.0_ License. That means you can chose either the MIT licence or the
