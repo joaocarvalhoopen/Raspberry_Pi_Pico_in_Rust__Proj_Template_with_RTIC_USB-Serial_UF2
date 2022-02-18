@@ -177,7 +177,7 @@ I tested the probe program firmware that should be loaded into a second Pico, th
 * **korken89 – pico-probe** <br>
   [https://github.com/korken89/pico-probe](https://github.com/korken89/pico-probe)
 
-To program **follow the instruction** in the ```README.md``` in the above link. You have to connect the two Pico’s and you have to compile the Pico-Probe and you have to program it. 
+To program **follow the instructions** in the ```README.md``` in the above link. You have to connect the two Pico’s. You have to compile the Pico-Probe, upload it as a UF2 and after that you can use it to program the target Pico. 
 
 ```
 # Don’t forget to change the .cargo/config.toml in my template project,
