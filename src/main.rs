@@ -1,6 +1,7 @@
 #![no_std]
 #![no_main]
 
+use defmt_rtt as _;
 use panic_halt as _;
 
 mod fmt;
@@ -23,7 +24,7 @@ mod app {
     use usbd_serial::SerialPort;
 
     // Blinck time 5 seconds
-    const SCAN_TIME_US: u32 = 5000000; // 1000000; // 200000;
+    const SCAN_TIME_US: u32 = 200000; //5000000; // 1000000; // 200000;
 
     // IMPORTANT: The USB-Serial with RTIC github project example that I'm following.
     //            I tried to use the Pico board examples of USB-Serial (without interrupts
@@ -420,7 +421,7 @@ mod app {
                 // GPIO 25 onboard LED, we are going to read the bit 8 of the gpio_status register.
                 //  OUTFROMPERI - output signal from selected peripheral, before register
                 //                override is applied.
-                // See pag 272 of the Pico Datasheet:
+                // See pag 272 of the Pico Datasets:
                 // https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#_gpio_functions
 
                 let led_status_reg =
