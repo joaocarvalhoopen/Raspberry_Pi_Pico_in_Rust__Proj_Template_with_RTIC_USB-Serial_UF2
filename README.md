@@ -138,7 +138,7 @@ $ cargo run --release
 
 10. Play with the code and understand it. See it, as an example of RTIC development with USB-Serial and UF2 programming and then change it (use it as a template) into your project. The only thing that you have to make is to change the root directory name into your project name and change the Cargo.toml file project name in the field ```name = "rp2040-project-template"```. This file and your project name as to match, use only lower case letter and "-" or "_".  
 
-**Note_1:** UF2 - Make sure your .cargo/config contains the following (it should by default if you are working in this repository for uf2 method): <br>
+**Note_1:** UF2 - Make sure your .cargo/config.toml contains the following (it should by default if you are working in this repository for uf2 method): <br>
 
 ```
 [target.thumbv6m-none-eabi]
@@ -169,6 +169,43 @@ $ rustup target add thumbv6m-none-eabi
 # To go back to Rust stable version do
 $ rustup default stable
 ```
+
+# This project can also be programmed with other Raspberry Pi Pico as the programmer.
+
+I tested the probe program firmware that should be loaded into a second Pico, the programmer. That allows you to program the first Pico. **Rpi Pico-Probe** from **korken89** that implements a CMSIS DAP V1 and V2 Probe and it works well. Currently Pico-Probe is still under heavy development so many new features should appear but currently it already works well to program the Pico. <br>
+
+* **korken89 – pico-probe** <br>
+  [https://github.com/korken89/pico-probe](https://github.com/korken89/pico-probe)
+
+To program **follow the instruction** in the ```README.md``` in the above link. You have to connect the two Pico’s and you have to compile the Pico-Probe and you have to program it. 
+
+```
+# Don’t forget to change the .cargo/config.toml in my template project,
+
+# comment the runner line for UF2 programming type
+runner = "elf2uf2-rs -d" 
+
+# and uncomment the line
+runner = "probe-run --chip RP2040" 
+
+# then do
+$ cargo clean
+$ cargo run --release
+ 
+# to exit CMSIS DAP terminal do a ctrl + C
+```
+
+The connection diagram that I used (but you can change the pins in the Pico-Probe code ```setup.rs```) was:
+
+| Pin on programmer Pico | Description | Pin on target Pico    |
+| ---------------------- | ----------- | --------------------- |
+| GPIO13                 | nRESET      | Run Pin               |
+| GPIO14                 | SWDIO       | SWDIO in 3 pin header |
+| GPIO15                 | SWCLK       | SWCLK in 3 pin header | 
+| VSYS                   | Power       | VSYS                  | 
+| GND                    | Ground      | GND                   |
+| GND                    | Ground      | GND in 3 pin header   |
+
 
 ## Good Pico in Rust References
 
