@@ -170,7 +170,7 @@ $ rustup target add thumbv6m-none-eabi
 $ rustup default stable
 ```
 
-# This project can also be programmed with other Raspberry Pi Pico as the programmer.
+## This project can also be programmed with other Raspberry Pi Pico as the programmer.
 
 I tested the probe program firmware that should be loaded into a second Pico, the programmer. That allows you to program the first Pico. **Rpi Pico-Probe** from **korken89** that implements a CMSIS DAP V1 and V2 Probe and it works well. Currently Pico-Probe is still under heavy development so many new features should appear but currently it already works well to program the Pico. <br>
 
