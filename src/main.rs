@@ -24,7 +24,7 @@ mod app {
     use usbd_serial::SerialPort;
 
     // Blinck time 5 seconds
-    const SCAN_TIME_US: u32 = 200000; //5000000; // 1000000; // 200000;
+    const SCAN_TIME_US: u32 = 5000000; //  200000; // 5000000;  // 1000000; // 200000;
 
     // IMPORTANT: The USB-Serial with RTIC github project example that I'm following.
     //            I tried to use the Pico board examples of USB-Serial (without interrupts
@@ -466,8 +466,20 @@ mod app {
             }
             // 7 - Set LED blink enable
             b'7' => {
-                write_serial(serial, "6 - Set LED blink enable\n", false);
+                write_serial(serial, "7 - Set LED blink enable\n", false);
                 *led_blink_enable = true;
+            }
+            b'8' => {
+                write_serial(serial, "8 - Display data rate\n", false);
+
+                let data_rate = serial.line_coding().data_rate();
+                let mut buf = [0u8; 64];
+                let _ = writeln!(Wrapper::new(&mut buf), "Data rate: {} bit/s", data_rate);
+                write_serial(
+                    serial,
+                    unsafe { core::str::from_utf8_unchecked(&buf) },
+                    false,
+                );
             }
             _ => {
                 write_serial(
@@ -496,6 +508,7 @@ mod app {
 *    5   - Set LED on
 *    6   - Set LED off
 *    7   - Set LED blink enable
+*    8   - Display data rate
 *****************
 Enter option: ";
 
